@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
 using ServerConsole.Model;
+using ServerConsole.ModelsDTO;
 
 namespace ServerConsole.Hubs
 {
@@ -38,31 +39,28 @@ namespace ServerConsole.Hubs
             }
         }
 
-        public async Task<List<atencion_medicos>> GetItems()
+        public async Task<List<AtencionMedicosDTO>> GetItems()
         {
-            try
+            using (var entity = new atencion_medicos_dbEntities())
             {
-                using (atencion_medicos_dbEntities entity = new atencion_medicos_dbEntities())
-                {
-                    Console.WriteLine("Informacion se ha enviado al cliente");
-                    return entity.atencion_medicos.Include(a => a.aseguradora).
-                                                        Include(e => e.estatus1).
-                                                        Include(r => r.responsabilidad1).
-                                                        Include(m => m.medico1).ToList();
+                var resultado = entity.atencion_medicos
+                    .Include(a => a.aseguradora)
+                    .Include(e => e.estatus1)
+                    .Include(r => r.responsabilidad1)
+                    .Include(m => m.medico1)
+                    .Select(x => new AtencionMedicosDTO
+                    {
+                        IdAtencionMedicos = x.id_atencion_medicos,
+                        NombreMedico = x.medico1.nombre,
+                        Aseguradora = x.aseguradora.CompDesc,
+                        Estatus = x.estatus1.estatus1,
+                        Responsabilidad = x.responsabilidad1.responsabilidad1
+                    }).ToList();
 
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
+                Console.WriteLine("Datos enviados al cliente: " + resultado.Count);
+                return resultado;
             }
         }
-
-        /*public void GetAllRequest()
-        {
-            Clients.All.GetAllRequest();
-        }*/
 
     }
 }

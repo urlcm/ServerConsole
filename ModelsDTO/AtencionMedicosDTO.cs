@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ServerConsole.ModelsDTO
 {
-    internal class AtencionMedicosDTO
+    public class AtencionMedicosDTO
     {
+        public int IdAtencionMedicos;
+        public string NombreMedico;
+        public string Aseguradora;
+        public string Estatus;
+        public string Responsabilidad;
     }
 }

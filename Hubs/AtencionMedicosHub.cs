@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
-using ServerConsole.Model;
 using ServerConsole.ModelsDTO;
+
 
 namespace ServerConsole.Hubs
 {
@@ -61,6 +61,25 @@ namespace ServerConsole.Hubs
                 return resultado;
             }
         }
+
+        public async Task addItem(AtencionMedicosDTO atencionMedicos)
+        {
+            atencion_medicos atencion_Medicos_entity = new atencion_medicos();
+            using (atencion_medicos_dbEntities atm = new atencion_medicos_dbEntities())
+            {
+                //atm.atencion_medicos.Add();
+            }
+        }
+
+        public atencion_medicos createItemAtencionMedicos()
+        {
+            atencion_medicos atencionMedicos = new atencion_medicos
+            {
+
+            };
+            return atencionMedicos;
+        }
+
 
     }
 }

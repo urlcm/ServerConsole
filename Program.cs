@@ -12,7 +12,7 @@ namespace ServerConsole
     {
         static void Main(string[] args)
         {
-            string url = "http://192.168.1.69:9090/"; // Escucha en todas las interfaces en el puerto 8080
+            string url = "http://172.19.4.36:9090/"; // Escucha en todas las interfaces en el puerto 8080
 
             using (WebApp.Start<Startup>(url))
             {

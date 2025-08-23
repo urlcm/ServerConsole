@@ -9,32 +9,63 @@ namespace ServerConsole.ModelsDTO
 {
     public class AtencionMedicosDTO
     {
-        public int IdAtencionMedicos;
-        public string Responsabilidad;
-        public string Estatus;
-        public string Ingreso;
-        public string fecha_ingreso;
-        public string fecha_entrega_tab;
-        public string fecha_solicitado;
-        public string siniestro;
-        public string paciente;
-        public string cuenta;
-        public string NombreMedico;
-        public string Aseguradora;
-        public string concepto_honorario;
-        public string importe;
-        public string renta_importe_cedular;
-        public string total;
-        public string factura;
-        public string cancelado_recibo;
-        public string cancelado;
-        public string recibe;
-        public string fecha_enviado;
-        public string fecha_reenviado;
-        public string folio_portal;
-        public string fecha_pago;
-        public string observaciones;
-        public string asistente;
-        public string correo;
+        public int IdAtencionMedicos { get; set; }
+        public ResponsabilidadDTO Responsabilidad { get; set; }
+        public EstatusDTO Estatus { get; set; }
+        public DateTime? Ingreso { get; set; }
+        public DateTime? fecha_ingreso { get; set; }
+        public DateTime? fecha_entrega_tab { get; set; }
+        public DateTime? fecha_solicitado { get; set; }
+        public DateTime? fecha_entregado { get; set; }
+        public string siniestro { get; set; }
+        public string paciente { get; set; }
+        public string cuenta { get; set; }
+        public MedicoDTO medico { get; set; }
+        public AseguradoraDTO Aseguradora { get; set; }
+        public string concepto_honorario { get; set; }
+        public double? importe { get; set; }
+        public double? isr { get; set; }
+        public double? renta_importe_cedular { get; set; }
+        public double? total { get; set; }
+        public string factura { get; set; }
+        public int? cancelado_recibo { get; set; }
+        public string cancelado { get; set; }
+        public string recibe { get; set; }
+        public DateTime? fecha_enviado { get; set; }
+        public DateTime? fecha_reenviado { get; set; }
+        public string folio_portal { get; set; }
+        public DateTime? fecha_pago { get; set; }
+        public string observaciones { get; set; }
+        public string asistente { get; set; }
+        public string correo { get; set; }
+        /*public int IdAtencionMedicos { get; set; }
+        public ResponsabilidadDTO Responsabilidad { get; set; }
+        public EstatusDTO Estatus { get; set; }
+        public DateTime Ingreso { get; set; }
+        public DateTime fecha_ingreso { get; set; }
+        public DateTime fecha_entrega_tab { get; set; }
+        public DateTime fecha_solicitado { get; set; }
+        public DateTime fecha_entregado { get; set; }
+        public string siniestro { get; set; }
+        public string paciente { get; set; }
+        public string cuenta { get; set; }
+        public MedicoDTO medico { get; set; }
+        public AseguradoraDTO Aseguradora { get; set; }
+        public string concepto_honorario { get; set; }
+        public double importe { get; set; }
+        public double isr { get; set; }
+        public double renta_importe_cedular { get; set; }
+        public double total { get; set; }
+        public string factura { get; set; }
+        public string cancelado_recibo { get; set; }
+        public string cancelado { get; set; }
+        public string recibe { get; set; }
+        public DateTime fecha_enviado { get; set; }
+        public DateTime fecha_reenviado { get; set; }
+        public string folio_portal { get; set; }
+        public DateTime fecha_pago { get; set; }
+        public string observaciones { get; set; }
+        public string asistente { get; set; }
+        public string correo { get; set; }*/
     }
 }

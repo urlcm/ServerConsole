@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ServerConsole.ModelsDTO
 {
-    internal class MedicoDTO
+    public class MedicoDTO
     {
-        public int idMedico;
-        public string nombre;
-        public AtencionMedicosDTO atencionMedicos;
+        public int idMedico { get; set; }
+        public string nombre {  get; set; }
+        //public AtencionMedicosDTO atencionMedicos;
     }
 }

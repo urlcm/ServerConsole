@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ServerConsole.ModelsDTO
 {
-    internal class Responsabilidad
+    public class ResponsabilidadDTO
     {
+        public int idResponsabilida {  get; set; }
+        public string responsabilidad { get; set; }
     }
 }

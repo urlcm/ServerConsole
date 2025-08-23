@@ -17,6 +17,8 @@ namespace ServerConsole
             using (WebApp.Start<Startup>(url))
             {
                 Console.WriteLine("Servidor SignalR corriendo en: " + url);
+                Console.WriteLine("Presiona cualquier tecla para minimizar la pantalla...");
+                Console.ReadKey();
                 Console.WriteLine("Presiona cualquier tecla para cerrar...");
                 Console.ReadKey();
             }

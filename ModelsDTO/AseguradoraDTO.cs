@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ServerConsole.ModelsDTO
 {
-    internal class AseguradoraDTO
+    public class AseguradoraDTO
     {
-        public string idResponsabilidad{ get; set; }
-        public string responsabilidad { get; set; }
+        public int idAseguradora { get; set; }
+        public string compania_aseguradora { get; set; }
     }
 }

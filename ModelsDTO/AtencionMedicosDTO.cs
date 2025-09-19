@@ -11,7 +11,31 @@ namespace ServerConsole.ModelsDTO
     {
         public int IdAtencionMedicos { get; set; }
         public ResponsabilidadDTO Responsabilidad { get; set; }
+        public string ResponsabilidadConcepto
+        {
+            get => Responsabilidad?.responsabilidad;
+            set
+            {
+                if (Responsabilidad == null)
+                    Responsabilidad = new ResponsabilidadDTO();
+
+                Responsabilidad.responsabilidad = value;
+            }
+        }
+
         public EstatusDTO Estatus { get; set; }
+        public string EstatusEstado
+        {
+            get => Estatus?.estatus;
+            set
+            {
+                if (Estatus == null)
+                    Estatus = new EstatusDTO();
+
+                Estatus.estatus = value;
+            }
+        }
+
         public DateTime? Ingreso { get; set; }
         public DateTime? fecha_ingreso { get; set; }
         public DateTime? fecha_entrega_tab { get; set; }
@@ -21,7 +45,31 @@ namespace ServerConsole.ModelsDTO
         public string paciente { get; set; }
         public string cuenta { get; set; }
         public MedicoDTO medico { get; set; }
+        public string MedicoNombre
+        {
+            get => medico?.nombre;
+            set
+            {
+                if (medico == null)
+                    medico = new MedicoDTO();
+
+                medico.nombre = value;
+            }
+        }
+
         public AseguradoraDTO Aseguradora { get; set; }
+        public string AseguradoraNombre
+        {
+            get => Aseguradora?.compania_aseguradora;
+            set
+            {
+                if (Aseguradora == null)
+                    Aseguradora = new AseguradoraDTO();
+
+                Aseguradora.compania_aseguradora = value;
+            }
+        }
+
         public string concepto_honorario { get; set; }
         public double? importe { get; set; }
         public double? isr { get; set; }

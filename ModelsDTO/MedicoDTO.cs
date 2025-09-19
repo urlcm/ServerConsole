@@ -10,6 +10,5 @@ namespace ServerConsole.ModelsDTO
     {
         public int idMedico { get; set; }
         public string nombre {  get; set; }
-        //public AtencionMedicosDTO atencionMedicos;
     }
 }

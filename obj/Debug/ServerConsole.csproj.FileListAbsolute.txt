@@ -1,0 +1,65 @@
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\ServerConsole.exe.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\ServerConsole.exe
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\ServerConsole.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Cors.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Owin.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\System.Web.Cors.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Cors.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\obj\Debug\ServerConsole.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\obj\Debug\ServerConsole.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\obj\Debug\ServerCo.458B81E2.Up2Date
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\obj\Debug\ServerConsole.exe
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\obj\Debug\ServerConsole.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 8vo semestre\Programacion de sistemas de base 1\ServerConsole\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\obj\Debug\ServerConsole.csproj.AssemblyReference.cache
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\obj\Debug\ServerConsole.csproj.CoreCompileInputs.cache
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\ServerConsole.exe.config
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\ServerConsole.exe
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\ServerConsole.pdb
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\EntityFramework.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Cors.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Owin.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\System.Web.Cors.dll
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\EntityFramework.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Cors.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\obj\Debug\ServerCo.458B81E2.Up2Date
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\obj\Debug\ServerConsole.exe
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\obj\Debug\ServerConsole.pdb
+C:\Users\edwin.cruz\Documents\Atencion-Medicos\ServerConsole\obj\Debug\ServerConsole.exe.config

@@ -55,7 +55,7 @@ namespace ServerConsole.Hubs
                    IdAtencionMedicos = x.id_atencion_medicos,
                    ResponsabilidadConcepto = x.responsabilidad1.responsabilidad1,
                    EstatusEstado = x.estatus1.estatus1,
-                   /*Responsabilidad = new ResponsabilidadDTO()
+                   Responsabilidad = new ResponsabilidadDTO()
                    {
                        idResponsabilida = x.responsabilidad1.idresponsabilidad,
                        responsabilidad = x.responsabilidad1.responsabilidad1
@@ -64,7 +64,7 @@ namespace ServerConsole.Hubs
                    {
                        idEstatus = x.estatus1.idEstatus,
                        estatus = x.estatus1.estatus1
-                   },*/
+                   },
                    Ingreso = x.ingreso.Value,
                    fecha_ingreso = x.fecha_ingreso.Value,
                    fecha_entrega_tab = x.fecha_entrega_tab.Value,
@@ -75,7 +75,7 @@ namespace ServerConsole.Hubs
                    cuenta = x.cuenta,
                    MedicoNombre = x.medico1.nombre,
                    AseguradoraNombre = x.aseguradora.CompDesc,
-                   /*medico = new MedicoDTO()
+                   medico = new MedicoDTO()
                    { 
                        idMedico = x.medico1.idMedico,
                        nombre = x.medico1.nombre 
@@ -84,7 +84,7 @@ namespace ServerConsole.Hubs
                    {
                        idAseguradora = x.aseguradora.idComp,
                        compania_aseguradora = x.aseguradora.CompDesc
-                   },*/
+                   },
                    importe = x.importe,
                    isr = x.isr,
                    renta_importe_cedular = x.renta_importe_cedular,
@@ -221,20 +221,18 @@ namespace ServerConsole.Hubs
             atencion_medicos atencion_Medicos = new atencion_medicos
             {
                 id_atencion_medicos = itemAtencionMedicosDTO.IdAtencionMedicos,
-                //responsabilidad = itemAtencionMedicosDTO.Responsabilidad,
-                //ResponsabilidadConcepto = x.responsabilidad1.responsabilidad1,
-                //EstatusEstado = x.estatus1.estatus1,
-                /*Responsabilidad = new ResponsabilidadDTO()
-                
-                    idResponsabilida = x.responsabilidad1.idresponsabilidad,
-                    responsabilidad = x.responsabilidad1.responsabilidad1
-                },
-                Estatus = new EstatusDTO()
+                responsabilidad1 = new responsabilidad()
                 {
-                    idEstatus = x.estatus1.idEstatus,
-                    estatus = x.estatus1.estatus1
-                },*/
-                
+
+                    idresponsabilidad = itemAtencionMedicosDTO.Responsabilidad.idResponsabilida,
+                    responsabilidad1 = itemAtencionMedicosDTO.Responsabilidad.responsabilidad
+                },
+                estatus1 = new estatus()
+                {
+                    idEstatus = itemAtencionMedicosDTO.Estatus.idEstatus,
+                    estatus1 = itemAtencionMedicosDTO.Estatus.estatus
+                },
+
                 ingreso = itemAtencionMedicosDTO.Ingreso,
                 fecha_ingreso = itemAtencionMedicosDTO.fecha_ingreso,
                 fecha_entrega_tab = itemAtencionMedicosDTO.fecha_entrega_tab,
@@ -243,18 +241,16 @@ namespace ServerConsole.Hubs
                 siniestro = itemAtencionMedicosDTO.siniestro,
                 paciente = itemAtencionMedicosDTO.paciente,
                 cuenta = itemAtencionMedicosDTO.cuenta,
-                //Me = itemAtencionMedicosDTO.medico1.nombre,
-                //AseguradoraNombre = .aseguradora.CompDesc,
-                /*medico = new MedicoDTO()
-                { 
-                    idMedico = x.medico1.idMedico,
-                    nombre = x.medico1.nombre 
-                },
-                Aseguradora = new AseguradoraDTO()
+                medico1 = new medico()
                 {
-                    idAseguradora = x.aseguradora.idComp,
-                    compania_aseguradora = x.aseguradora.CompDesc
-                },*/
+                    idMedico = itemAtencionMedicosDTO.medico.idMedico,
+                    nombre = itemAtencionMedicosDTO.medico.nombre,
+                },
+                aseguradora = new aseguradora()
+                {
+                    idComp = itemAtencionMedicosDTO.Aseguradora.idAseguradora,
+                    CompDesc = itemAtencionMedicosDTO.Aseguradora.compania_aseguradora
+                },
                 importe = itemAtencionMedicosDTO.importe,
                 isr = itemAtencionMedicosDTO.isr != null ? (double)itemAtencionMedicosDTO.isr : 0,
                 renta_importe_cedular = itemAtencionMedicosDTO.renta_importe_cedular,

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="atencion_medicos_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="aseguradora">
+    <Key>
+      <PropertyRef Name="idComp" />
+    </Key>
+    <Property Name="idComp" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompDesc" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="atencion_medicos">
+    <Key>
+      <PropertyRef Name="id_atencion_medicos" />
+    </Key>
+    <Property Name="id_atencion_medicos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="responsabilidad" Type="int" />
+    <Property Name="estatus" Type="int" />
+    <Property Name="ingreso" Type="date" />
+    <Property Name="fecha_ingreso" Type="date" />
+    <Property Name="fecha_entrega_tab" Type="date" />
+    <Property Name="fecha_solicitado" Type="date" />
+    <Property Name="fecha_entregado" Type="date" />
+    <Property Name="siniestro" Type="nvarchar(max)" />
+    <Property Name="paciente" Type="nvarchar(max)" />
+    <Property Name="cuenta" Type="nvarchar(max)" />
+    <Property Name="comp_aseguradora" Type="int" />
+    <Property Name="medico" Type="int" />
+    <Property Name="concepto_honorario" Type="nvarchar(max)" />
+    <Property Name="importe" Type="float" />
+    <Property Name="isr" Type="float" Nullable="false" />
+    <Property Name="renta_importe_cedular" Type="float" />
+    <Property Name="total" Type="float" Nullable="false" />
+    <Property Name="factura" Type="nvarchar(max)" />
+    <Property Name="cancelado_recibo" Type="int" />
+    <Property Name="recibe" Type="nvarchar(max)" />
+    <Property Name="fecha_enviado" Type="date" />
+    <Property Name="fecha_reenviado" Type="date" />
+    <Property Name="folio_portal" Type="nvarchar(max)" />
+    <Property Name="fecha_pago" Type="date" />
+    <Property Name="observaciones" Type="nvarchar(max)" />
+    <Property Name="asistente" Type="nvarchar(max)" />
+    <Property Name="correo" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'atencion_medicos_db.dbo.CONCENTRADO$' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="CONCENTRADO$">
+          <Property Name="RESPONSABILIDAD" Type="nvarchar" MaxLength="255" />
+          <Property Name="STATUS" Type="nvarchar" MaxLength="255" />
+          <Property Name="INGRESO" Type="datetime" />
+          <Property Name="FECHA DE INGRESO" Type="datetime" />
+          <Property Name="FECHA ENTREGA TABULADOR" Type="datetime" />
+          <Property Name="FECHA SOLICITADO" Type="datetime" />
+          <Property Name="FECHA ENTREGADO" Type="datetime" />
+          <Property Name="SINIESTRO" Type="float" />
+          <Property Name="PACIENTE " Type="nvarchar" MaxLength="255" />
+          <Property Name="CUENTA" Type="float" />
+          <Property Name="COMPAÑÍA DE SEGUROS" Type="nvarchar" MaxLength="255" />
+          <Property Name=" MEDICO" Type="nvarchar" MaxLength="255" />
+          <Property Name="CONCEPTO HONORARIOS" Type="nvarchar" MaxLength="255" />
+          <Property Name="IMPORTE " Type="money" />
+          <Property Name="ISR" Type="money" />
+          <Property Name="RET IMP CEDULAR" Type="money" />
+          <Property Name="TOTAL" Type="money" />
+          <Property Name="FACTURA" Type="float" />
+          <Property Name="SE CANCELA  RECIBO" Type="nvarchar" MaxLength="255" />
+          <Property Name="RECIBE " Type="nvarchar" MaxLength="255" />
+          <Property Name="FECHA ENVIADO" Type="datetime" />
+          <Property Name="FECHA REENVIADO" Type="nvarchar" MaxLength="255" />
+          <Property Name="FOLIO PORTAL " Type="nvarchar" MaxLength="255" />
+          <Property Name="FECHA DE PAGO" Type="datetime" />
+          <Property Name="OBSERVACIONES" Type="nvarchar" MaxLength="255" />
+          <Property Name="ASISTENTE" Type="nvarchar" MaxLength="255" />
+          <Property Name="correo" Type="nvarchar" MaxLength="255" />
+          <Property Name="CORREO1" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="estatus">
+    <Key>
+      <PropertyRef Name="idEstatus" />
+    </Key>
+    <Property Name="idEstatus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="estatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="medico">
+    <Key>
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="idMedico" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="responsabilidad">
+    <Key>
+      <PropertyRef Name="idresponsabilidad" />
+    </Key>
+    <Property Name="idresponsabilidad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="responsabilidad" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_atencion_medicos_aseguradora">
+    <End Role="aseguradora" Type="Self.aseguradora" Multiplicity="0..1" />
+    <End Role="atencion_medicos" Type="Self.atencion_medicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aseguradora">
+        <PropertyRef Name="idComp" />
+      </Principal>
+      <Dependent Role="atencion_medicos">
+        <PropertyRef Name="comp_aseguradora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_atencion_medicos_estatus">
+    <End Role="estatus" Type="Self.estatus" Multiplicity="0..1" />
+    <End Role="atencion_medicos" Type="Self.atencion_medicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estatus">
+        <PropertyRef Name="idEstatus" />
+      </Principal>
+      <Dependent Role="atencion_medicos">
+        <PropertyRef Name="estatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_atencion_medicos_medico">
+    <End Role="medico" Type="Self.medico" Multiplicity="0..1" />
+    <End Role="atencion_medicos" Type="Self.atencion_medicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="medico">
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="atencion_medicos">
+        <PropertyRef Name="medico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_atencion_medicos_responsabilidad">
+    <End Role="responsabilidad" Type="Self.responsabilidad" Multiplicity="0..1" />
+    <End Role="atencion_medicos" Type="Self.atencion_medicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="responsabilidad">
+        <PropertyRef Name="idresponsabilidad" />
+      </Principal>
+      <Dependent Role="atencion_medicos">
+        <PropertyRef Name="responsabilidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="atencion_medicos_dbModelStoreContainer">
+    <EntitySet Name="aseguradora" EntityType="Self.aseguradora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="atencion_medicos" EntityType="Self.atencion_medicos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="estatus" EntityType="Self.estatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="medico" EntityType="Self.medico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="responsabilidad" EntityType="Self.responsabilidad" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_atencion_medicos_aseguradora" Association="Self.FK_atencion_medicos_aseguradora">
+      <End Role="aseguradora" EntitySet="aseguradora" />
+      <End Role="atencion_medicos" EntitySet="atencion_medicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_atencion_medicos_estatus" Association="Self.FK_atencion_medicos_estatus">
+      <End Role="estatus" EntitySet="estatus" />
+      <End Role="atencion_medicos" EntitySet="atencion_medicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_atencion_medicos_medico" Association="Self.FK_atencion_medicos_medico">
+      <End Role="medico" EntitySet="medico" />
+      <End Role="atencion_medicos" EntitySet="atencion_medicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_atencion_medicos_responsabilidad" Association="Self.FK_atencion_medicos_responsabilidad">
+      <End Role="responsabilidad" EntitySet="responsabilidad" />
+      <End Role="atencion_medicos" EntitySet="atencion_medicos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
